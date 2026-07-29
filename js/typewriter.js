@@ -8,7 +8,7 @@ export function initTypewriter() {
 
     const words = [
         'Front-End Developer',
-        'Angular Specialist',
+        'Angular Developer',
         'React Developer',
         'UI/UX Enthusiast'
     ];
