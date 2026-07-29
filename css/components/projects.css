@@ -1,0 +1,361 @@
+/* ==========================================================================
+   Projects Product Showcase & Case Studies - Roaa Ahmed Portfolio
+   ========================================================================== */
+
+.projects-section {
+    background: var(--bg-dark);
+}
+
+/* Category Filter Tabs */
+.project-filters {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-emerald);
+    color: var(--accent-emerald);
+}
+
+.filter-btn.active {
+    background: var(--accent-emerald);
+    color: var(--text-inverse);
+    border-color: var(--accent-emerald);
+    font-weight: 700;
+    box-shadow: 0 4px 20px rgba(0, 240, 181, 0.3);
+}
+
+/* Showcase Projects Stack (Case Study Style) */
+.showcase-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.showcase-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 0;
+    transition: all var(--transition-smooth);
+    position: relative;
+    box-shadow: var(--shadow-glass);
+}
+
+.showcase-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), var(--border-glow);
+}
+
+/* Browser Window Frame Mockup Media Container */
+.showcase-media-container {
+    background: #090d16;
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.browser-window-bar {
+    background: #060910;
+    padding: 0.65rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    flex-shrink: 0;
+}
+
+.browser-window-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.browser-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.b-red { background: #ff5f56; }
+.b-yellow { background: #ffbd2e; }
+.b-green { background: #27c93f; }
+
+.browser-address-bar {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    padding: 2px 14px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.browser-address-bar i {
+    font-size: 0.65rem;
+    color: var(--accent-emerald);
+}
+
+.showcase-screenshot-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 240, 181, 0.03) 0%, transparent 70%);
+}
+
+.showcase-screenshot-frame img {
+    max-width: 100%;
+    max-height: 380px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: transform var(--transition-smooth);
+}
+
+.showcase-card:hover .showcase-screenshot-frame img {
+    transform: scale(1.02);
+}
+
+.showcase-media-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(7, 9, 14, 0.6);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.showcase-card:hover .showcase-media-overlay {
+    opacity: 1;
+}
+
+/* Category & Featured Ribbons */
+.showcase-badges {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.badge-featured {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-inverse);
+    background: var(--accent-emerald);
+    padding: 0.3rem 0.85rem;
+    border-radius: var(--radius-full);
+    box-shadow: 0 2px 10px rgba(0, 240, 181, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Domain Category Label Above Title */
+.showcase-domain-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent-emerald);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.showcase-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
+}
+
+/* Candidate Role Inside Content Details */
+.showcase-role-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 0.35rem 0.9rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.2rem;
+    font-size: 0.83rem;
+}
+
+.showcase-role-meta .role-title-label {
+    color: var(--text-muted);
+}
+
+.showcase-role-meta .role-title-val {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.showcase-content {
+    padding: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.showcase-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Key Contributions List Grid */
+.showcase-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.8rem;
+}
+
+.highlight-chip {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.highlight-chip i {
+    color: var(--accent-emerald);
+    font-size: 0.7rem;
+}
+
+/* Tech Stack Tags */
+.showcase-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 2rem;
+}
+
+.stack-tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-emerald);
+    background: var(--accent-emerald-glow);
+    border: 1px solid rgba(0, 240, 181, 0.25);
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+}
+
+/* Action Trigger Row */
+.showcase-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-case-study {
+    background: var(--accent-emerald);
+    color: var(--text-inverse);
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.65rem 1.3rem;
+    border-radius: var(--radius-md);
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all var(--transition-fast);
+}
+
+.btn-case-study:hover {
+    background: #00ffa6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 240, 181, 0.4);
+}
+
+.btn-demo-link {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0.65rem 1.1rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.btn-demo-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+    .showcase-card {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-media-container {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .showcase-screenshot-frame {
+        min-height: 220px;
+    }
+}

@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roaa Ahmed | Front-End Developer (Angular & React)</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Roaa Ahmed, a passionate Front-End Developer specializing in Angular, React, TypeScript, clean architecture, and responsive web design.">
+    <meta name="keywords"
+        content="Roaa Ahmed, Front-End Developer, Angular, React, Web Developer, TypeScript, Portfolio, JavaScript, UI/UX">
+    <meta name="author" content="Roaa Ahmed">
+
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Awesome & PrimeIcons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeicons/primeicons.css">
+
+    <!-- Modular CSS Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/about.css">
+    <link rel="stylesheet" href="css/components/skills.css">
+    <link rel="stylesheet" href="css/components/experience.css">
+    <link rel="stylesheet" href="css/components/projects.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+    <link rel="stylesheet" href="css/components/contact.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+</head>
+
+<body>
+    <!-- Subtle Grid Background -->
+    <div class="bg-grid-pattern"></div>
+
+    <!-- NAVIGATION HEADER -->
+    <header id="mainHeader">
+        <div class="container nav-container">
+            <a href="#home" class="brand-logo">
+                &lt;<span class="code-tag">RA</span> /&gt;
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary nav-hire-btn">
+                    <i class="fas fa-paper-plane"></i> Hire Me
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <div class="availability-badge reveal">
+                    <span class="availability-dot"></span>
+                    AVAILABLE FOR FULL-TIME & FREELANCE ROLES
+                </div>
+
+                <h1 class="hero-name gradient-text reveal reveal-delay-1">Roaa Ahmed</h1>
+
+                <div class="hero-role-wrap reveal reveal-delay-2">
+                    <span class="hero-typewriter" id="typewriterText"></span>
+                    <span class="typewriter-cursor"></span>
+                </div>
+
+                <p class="hero-description reveal reveal-delay-3">
+                    Front-End Developer passionate about building <strong>scalable single-page applications</strong>
+                    using
+                    <strong>Angular</strong> and <strong>React</strong>. I focus on clean component architecture,
+                    type safety with TypeScript, and seamless REST API integration.
+                </p>
+
+                <div class="hero-cta-group reveal reveal-delay-4">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-layer-group"></i> Explore Case Studies
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-stats-container reveal reveal-delay-4">
+                    <div class="stat-box">
+                        <div class="stat-number">2<span>+</span></div>
+                        <div class="stat-title">Years Project Experience</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">10<span>+</span></div>
+                        <div class="stat-title">Web Apps Built</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100<span>%</span></div>
+                        <div class="stat-title">Clean Code Standard</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Code Preview Visual Frame Replacing Stock Photo -->
+                    <div class="about-code-card reveal">
+                        <div class="code-card-header">
+                            <div class="code-card-dots">
+                                <span class="code-dot dot-red"></span>
+                                <span class="code-dot dot-yellow"></span>
+                                <span class="code-dot dot-green"></span>
+                            </div>
+                            <span class="code-card-title">developer.profile.ts</span>
+                        </div>
+                        <div class="code-card-body">
+                            <div><span class="code-keyword">interface</span> <span class="code-type">Developer</span> {
+                            </div>
+                            <div>&nbsp;&nbsp;name: <span class="code-type">string</span>;</div>
+                            <div>&nbsp;&nbsp;role: <span class="code-type">string</span>;</div>
+                            <div>&nbsp;&nbsp;stack: <span class="code-type">string</span>[];</div>
+                            <div>&nbsp;&nbsp;cleanCode: <span class="code-type">boolean</span>;</div>
+                            <div>}</div>
+                            <br>
+                            <div><span class="code-keyword">const</span> roaa: <span class="code-type">Developer</span>
+                                = {</div>
+                            <div>&nbsp;&nbsp;name: <span class="code-string">'Roaa Ahmed'</span>,</div>
+                            <div>&nbsp;&nbsp;role: <span class="code-string">'Front-End Developer'</span>,</div>
+                            <div>&nbsp;&nbsp;stack: [<span class="code-string">'Angular'</span>, <span
+                                    class="code-string">'React'</span>, <span class="code-string">'TypeScript'</span>,
+                                <span class="code-string">'Tailwind'</span>],
+                            </div>
+                            <div>&nbsp;&nbsp;cleanCode: <span class="code-keyword">true</span></div>
+                            <div>};</div>
+                        </div>
+                        <div class="floating-status-badge">
+                            <span class="status-indicator-dot"></span>
+                            <div>
+                                <div class="status-text-label">CURRENT STATUS</div>
+                                <div class="status-text-val">Open for Opportunities</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text-content reveal reveal-delay-2">
+                        <span class="section-tag">ABOUT ME</span>
+                        <h2 class="section-title">Passionate About Building Scalable Web Interfaces</h2>
+
+                        <p>
+                            I'm a Front-End Developer with a degree in Computer Science and hands-on experience building
+                            <strong>responsive, maintainable web applications</strong>. I focus on turning complex user
+                            workflows into clean, intuitive UI components.
+                        </p>
+
+                        <p>
+                            My technical stack is centered around <strong>Angular, React, JavaScript (ES6+), TypeScript,
+                                and asynchronous REST API integration</strong>. I prioritize writing modular,
+                            self-documenting code and enforcing solid frontend practices.
+                        </p>
+
+                        <div class="about-info-grid">
+                            <div class="info-card">
+                                <div class="info-icon-box"><i class="fas fa-envelope"></i></div>
+                                <div class="info-details">
+                                    <span class="info-label">Email</span>
+                                    <span class="info-value">roaaezzat676@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon-box"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="info-details">
+                                    <span class="info-label">Degree</span>
+                                    <span class="info-value">Computer Science Graduate</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon-box"><i class="fas fa-code"></i></div>
+                                <div class="info-details">
+                                    <span class="info-label">Core Stack</span>
+                                    <span class="info-value">Angular & React SPAs</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon-box"><i class="fas fa-globe"></i></div>
+                                <div class="info-details">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Egypt (Available Remote)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta-row">
+                            <a href="assets/NEWCCVV.pdf" download class="btn btn-primary">
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                            <a href="https://github.com/roaa676" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header-center reveal">
+                    <span class="section-tag">TECHNICAL EXPERTISE</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">
+                        Core languages, frameworks, UI libraries, and tools I use to build scalable frontend
+                        applications.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- HTML5 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #e34f26;"><i class="fab fa-html5"></i></div>
+                            <div>
+                                <div class="skill-name">HTML5 & Semantic Markup</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-card reveal reveal-delay-1">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #1572b6;"><i class="fab fa-css3-alt"></i></div>
+                            <div>
+                                <div class="skill-name">CSS3 & Responsive Design</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card reveal reveal-delay-2">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #f7df1e;"><i class="fab fa-js-square"></i></div>
+                            <div>
+                                <div class="skill-name">JavaScript (ES6+)</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RxJS -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #00f0b5;"><i class="fas fa-plug"></i></div>
+                            <div>
+                                <div class="skill-name">RxJS & Reactive Programming</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Angular -->
+                    <div class="skill-card reveal reveal-delay-3">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #dd0031;"><i class="fab fa-angular"></i></div>
+                            <div>
+                                <div class="skill-name">Angular Framework</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- React -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #61dafb;"><i class="fab fa-react"></i></div>
+                            <div>
+                                <div class="skill-name">React.js</div>
+                                <span class="skill-level-badge">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TypeScript -->
+                    <div class="skill-card reveal reveal-delay-1">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #3178c6;"><i class="fas fa-code-branch"></i>
+                            </div>
+                            <div>
+                                <div class="skill-name">TypeScript</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tailwind CSS -->
+                    <div class="skill-card reveal reveal-delay-2">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #38bdf8;"><i class="fas fa-wind"></i></div>
+                            <div>
+                                <div class="skill-name">Tailwind CSS</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PrimeNG -->
+                    <div class="skill-card reveal reveal-delay-3">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #3b82f6;"><i class="pi pi-prime"></i></div>
+                            <div>
+                                <div class="skill-name">PrimeNG Component UI</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REST APIs -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #00f0b5;"><i class="fas fa-plug"></i></div>
+                            <div>
+                                <div class="skill-name">REST API Integration</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Git & GitHub -->
+                    <div class="skill-card reveal reveal-delay-1">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap" style="color: #f05030;"><i class="fab fa-git-alt"></i></div>
+                            <div>
+                                <div class="skill-name">Git & GitHub Workflow</div>
+                                <span class="skill-level-badge">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE / TIMELINE SECTION -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header-center reveal">
+                    <span class="section-tag">CAREER & EDUCATION</span>
+                    <h2 class="section-title">Timeline & Growth</h2>
+                    <p class="section-subtitle">
+                        My practical development journey, academic background, and core engineering milestones.
+                    </p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Milestone 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <div class="timeline-role">Front-End Developer</div>
+                                    <div class="timeline-organization">Independent & Remote Project Work</div>
+                                </div>
+                                <span class="timeline-period">2023 - PRESENT</span>
+                            </div>
+                            <div class="timeline-body">
+                                Engineered responsive single-page web applications using Angular and React. Integrated
+                                asynchronous REST APIs, structured state management with Context API and LocalStorage,
+                                implemented data table sorting/pagination, and enforced clean component modularity.
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Angular</span>
+                                <span class="timeline-tag">React</span>
+                                <span class="timeline-tag">TypeScript</span>
+                                <span class="timeline-tag">PrimeNG</span>
+                                <span class="timeline-tag">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2 -->
+                    <div class="timeline-item reveal reveal-delay-2">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <div class="timeline-role">Bachelor of Computer Science</div>
+                                    <div class="timeline-organization">Faculty of Computer Science</div>
+                                </div>
+                                <span class="timeline-period">GRADUATE DEGREE</span>
+                            </div>
+                            <div class="timeline-body">
+                                Earned Bachelor's Degree in Computer Science. Built a strong theoretical foundation in
+                                software engineering principles, data structures, algorithms, object-oriented design,
+                                database management systems, and modern web architectures.
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Software Engineering</span>
+                                <span class="timeline-tag">Data Structures</span>
+                                <span class="timeline-tag">Algorithms</span>
+                                <span class="timeline-tag">OOP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REDESIGNED PRODUCT SHOWCASE PROJECTS SECTION -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header-center reveal">
+                    <span class="section-tag">PRODUCT SHOWCASE</span>
+                    <h2 class="section-title">Featured Case Studies</h2>
+                    <p class="section-subtitle">
+                        Handcrafted web applications built with emphasis on clean component architecture, real-world
+                        problem solving, and technology diversity across Angular & React.
+                    </p>
+                </div>
+
+                <div class="project-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All Showcase</button>
+                    <button class="filter-btn" data-filter="angular">Angular</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                    <button class="filter-btn" data-filter="ui-showcase">UI Showcase</button>
+                </div>
+
+                <div class="showcase-grid">
+                    <!-- PROJECT 1: MedFinder -->
+                    <article class="showcase-card reveal" data-category="angular">
+                        <!-- Browser Window Frame Mockup -->
+                        <div class="showcase-media-container">
+                            <div class="browser-window-bar">
+                                <div class="browser-window-dots">
+                                    <span class="browser-dot b-red"></span>
+                                    <span class="browser-dot b-yellow"></span>
+                                    <span class="browser-dot b-green"></span>
+                                </div>
+                                <div class="browser-address-bar">
+                                    <i class="fas fa-lock"></i> https://medfinder.app
+                                </div>
+                            </div>
+                            <div class="showcase-screenshot-frame">
+                                <img src="assets/MedFinder-Cover.png" alt="MedFinder Healthcare Platform Mockup">
+                                <div class="showcase-media-overlay">
+                                    <button class="play-demo-btn watch-demo-link" data-video="assets/MedFinder-Demo.mp4"
+                                        data-title="MedFinder Video Walkthrough"
+                                        aria-label="Play MedFinder Video Walkthrough">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-content">
+                            <div>
+                                <!-- Domain Category Label First -->
+                                <div class="showcase-domain-label">
+                                    <i class="fas fa-stethoscope"></i> Healthcare Platform
+                                </div>
+                                <h3 class="showcase-title">MedFinder</h3>
+
+                                <!-- Candidate Role Inside Content Details -->
+                                <div class="showcase-role-meta">
+                                    <span class="role-title-label">My Role:</span>
+                                    <span class="role-title-val">Frontend Developer</span>
+                                </div>
+
+                                <p class="showcase-desc">
+                                    A healthcare web application that enables users to search for medicines, check
+                                    pharmacy availability, reserve medications, and manage reservations through a
+                                    responsive and user-friendly interface integrated with REST APIs.
+                                </p>
+
+                                <div class="showcase-highlights">
+                                    <span class="highlight-chip"><i class="fas fa-search"></i> Medicine Search</span>
+                                    <span class="highlight-chip"><i class="fas fa-map-marker-alt"></i> Pharmacy
+                                        Locator</span>
+                                    <span class="highlight-chip"><i class="fas fa-calendar-check"></i> Reservation
+                                        System</span>
+                                    <span class="highlight-chip"><i class="fas fa-shield-alt"></i> Authentication</span>
+                                    <span class="highlight-chip"><i class="fas fa-plug"></i> REST API Integration</span>
+                                    <span class="highlight-chip"><i class="fas fa-mobile-alt"></i> Responsive UI</span>
+                                </div>
+
+                                <div class="showcase-stack">
+                                    <span class="stack-tag">Angular</span>
+                                    <span class="stack-tag">TypeScript</span>
+                                    <span class="stack-tag">PrimeNG</span>
+                                    <span class="stack-tag">.Net</span>
+                                    <span class="stack-tag">Bootstrap</span>
+                                    <span class="stack-tag">REST API</span>
+                                    <span class="stack-tag">Swagger</span>
+                                </div>
+                            </div>
+
+                            <div class="showcase-actions">
+                                <button class="btn-case-study open-case-study-btn" data-project="medfinder">
+                                    <i class="fas fa-book-open"></i> View Case Study
+                                </button>
+                                <button class="btn-demo-link watch-demo-link" data-video="assets/MedFinder-Demo.mp4"
+                                    data-title="MedFinder Demo">
+                                    <i class="fas fa-play-circle"></i> Watch Demo
+                                </button>
+                                <a href="https://github.com/roaa676" target="_blank" class="btn-demo-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: Learning Difficulties Diagnoses -->
+                    <article class="showcase-card reveal reveal-delay-1" data-category="angular">
+                        <!-- Browser Window Frame Mockup -->
+                        <div class="showcase-media-container">
+                            <div class="browser-window-bar">
+                                <div class="browser-window-dots">
+                                    <span class="browser-dot b-red"></span>
+                                    <span class="browser-dot b-yellow"></span>
+                                    <span class="browser-dot b-green"></span>
+                                </div>
+                                <div class="browser-address-bar">
+                                    <i class="fas fa-lock"></i> https://learning-diagnoses.edu
+                                </div>
+                            </div>
+                            <div class="showcase-screenshot-frame">
+                                <img src="assets/Grad-Cover.png" alt="Learning Difficulties Diagnoses Mockup">
+                                <div class="showcase-media-overlay">
+                                    <button class="play-demo-btn watch-demo-link" data-video="assets/Grad-Demo.mp4"
+                                        data-title="Learning Difficulties Diagnoses Demo"
+                                        aria-label="Play Learning Difficulties Video Walkthrough">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-content">
+                            <div>
+                                <!-- Domain Category Label First -->
+                                <div class="showcase-domain-label">
+                                    <i class="fas fa-brain"></i> AI-Assisted Learning Platform
+                                </div>
+                                <h3 class="showcase-title">Learning Difficulties Diagnoses</h3>
+
+                                <!-- Candidate Role Inside Content Details -->
+                                <div class="showcase-role-meta">
+                                    <span class="role-title-label">My Role:</span>
+                                    <span class="role-title-val">Full Stack Developer</span>
+                                </div>
+
+                                <p class="showcase-desc">
+                                    An AI-assisted graduation project designed to support the early detection of
+                                    learning difficulties through intelligent assessment workflows, personalized
+                                    reports, and interactive dashboards. Developed as a full-stack web application using
+                                    Angular for the frontend and Laravel for the backend.
+                                </p>
+
+                                <div class="showcase-highlights">
+                                    <span class="highlight-chip"><i class="fas fa-robot"></i> AI-Assisted
+                                        Assessment</span>
+                                    <span class="highlight-chip"><i class="fas fa-shield-alt"></i> Authentication</span>
+                                    <span class="highlight-chip"><i class="fas fa-chart-pie"></i> Analytics
+                                        Dashboard</span>
+                                    <span class="highlight-chip"><i class="fas fa-file-medical-alt"></i> Diagnosis
+                                        Reports</span>
+                                    <span class="highlight-chip"><i class="fas fa-database"></i> Database
+                                        Management</span>
+                                    <span class="highlight-chip"><i class="fas fa-mobile-alt"></i> Responsive UI</span>
+                                </div>
+
+                                <div class="showcase-stack">
+                                    <span class="stack-tag">Angular</span>
+                                    <span class="stack-tag">TypeScript</span>
+                                    <span class="stack-tag">PrimeNG</span>
+                                    <span class="stack-tag">PHP</span>
+                                    <span class="stack-tag">Laravel</span>
+                                    <span class="stack-tag">MySQL</span>
+                                    <span class="stack-tag">REST API</span>
+                                    <span class="stack-tag">Postman</span>
+                                </div>
+                            </div>
+
+                            <div class="showcase-actions">
+                                <button class="btn-case-study open-case-study-btn" data-project="learning-diagnoses">
+                                    <i class="fas fa-book-open"></i> View Case Study
+                                </button>
+                                <button class="btn-demo-link watch-demo-link" data-video="assets/Grad-Demo.mp4"
+                                    data-title="Learning Difficulties Demo">
+                                    <i class="fas fa-play-circle"></i> Watch Demo
+                                </button>
+                                <a href="https://github.com/roaa676" target="_blank" class="btn-demo-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3: Task Management System -->
+                    <article class="showcase-card reveal reveal-delay-2" data-category="angular">
+                        <!-- Browser Window Frame Mockup -->
+                        <div class="showcase-media-container">
+                            <div class="browser-window-bar">
+                                <div class="browser-window-dots">
+                                    <span class="browser-dot b-red"></span>
+                                    <span class="browser-dot b-yellow"></span>
+                                    <span class="browser-dot b-green"></span>
+                                </div>
+                                <div class="browser-address-bar">
+                                    <i class="fas fa-lock"></i> https://task-management.dev
+                                </div>
+                            </div>
+                            <div class="showcase-screenshot-frame">
+                                <img src="assets/TasksIMG.png" alt="Task Management System Mockup">
+                                <div class="showcase-media-overlay">
+                                    <button class="play-demo-btn watch-demo-link"
+                                        data-video="assets/task-management.mp4" data-title="Task Management Demo"
+                                        aria-label="Play Task Management Video Walkthrough">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-content">
+                            <div>
+                                <!-- Domain Category Label First -->
+                                <div class="showcase-domain-label">
+                                    <i class="fas fa-tasks"></i> Project Management Platform
+                                </div>
+                                <h3 class="showcase-title">Task Management System</h3>
+
+                                <!-- Candidate Role Inside Content Details -->
+                                <div class="showcase-role-meta">
+                                    <span class="role-title-label">My Role:</span>
+                                    <span class="role-title-val">Frontend Developer</span>
+                                </div>
+
+                                <p class="showcase-desc">
+                                    A modern task management application that streamlines project organization through
+                                    drag-and-drop boards, task categorization, status tracking, and an intuitive
+                                    responsive interface.
+                                </p>
+
+                                <div class="showcase-highlights">
+                                    <span class="highlight-chip"><i class="fas fa-columns"></i> Drag &amp; Drop
+                                        Board</span>
+                                    <span class="highlight-chip"><i class="fas fa-tasks"></i> Task Management</span>
+                                    <span class="highlight-chip"><i class="fas fa-tags"></i> Project Categories</span>
+                                    <span class="highlight-chip"><i class="fas fa-sliders-h"></i> PrimeNG
+                                        Components</span>
+                                    <span class="highlight-chip"><i class="fas fa-database"></i> LocalStorage
+                                        Persistence</span>
+                                    <span class="highlight-chip"><i class="fas fa-mobile-alt"></i> Responsive UI</span>
+                                </div>
+
+                                <div class="showcase-stack">
+                                    <span class="stack-tag">Angular</span>
+                                    <span class="stack-tag">TypeScript</span>
+                                    <span class="stack-tag">PrimeNG</span>
+                                    <span class="stack-tag">RxJS</span>
+                                    <span class="stack-tag">Reactive Forms</span>
+                                    <span class="stack-tag">Bootstrap</span>
+                                    <span class="stack-tag">LocalStorage</span>
+                                </div>
+                            </div>
+
+                            <div class="showcase-actions">
+                                <button class="btn-case-study open-case-study-btn" data-project="task-management">
+                                    <i class="fas fa-book-open"></i> View Case Study
+                                </button>
+                                <button class="btn-demo-link watch-demo-link" data-video="assets/task-management.mp4"
+                                    data-title="Task Management Demo">
+                                    <i class="fas fa-play-circle"></i> Watch Demo
+                                </button>
+                                <a href="https://github.com/roaa676" target="_blank" class="btn-demo-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4: Quick Pick -->
+                    <article class="showcase-card reveal reveal-delay-3" data-category="react">
+                        <!-- Browser Window Frame Mockup -->
+                        <div class="showcase-media-container">
+                            <div class="browser-window-bar">
+                                <div class="browser-window-dots">
+                                    <span class="browser-dot b-red"></span>
+                                    <span class="browser-dot b-yellow"></span>
+                                    <span class="browser-dot b-green"></span>
+                                </div>
+                                <div class="browser-address-bar">
+                                    <i class="fas fa-lock"></i> https://quickpick.shop
+                                </div>
+                            </div>
+                            <div class="showcase-screenshot-frame">
+                                <img src="assets/QuickPick-Cover.png" alt="Quick Pick E-Commerce Mockup">
+                                <div class="showcase-media-overlay">
+                                    <button class="play-demo-btn watch-demo-link" data-video="assets/quick-pick.mp4"
+                                        data-title="Quick Pick E-Commerce Demo"
+                                        aria-label="Play Quick Pick Video Walkthrough">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-content">
+                            <div>
+                                <!-- Domain Category Label First -->
+                                <div class="showcase-domain-label">
+                                    <i class="fab fa-react"></i> React E-Commerce SPA
+                                </div>
+                                <h3 class="showcase-title">Quick Pick</h3>
+
+                                <!-- Candidate Role Inside Content Details -->
+                                <div class="showcase-role-meta">
+                                    <span class="role-title-label">My Role:</span>
+                                    <span class="role-title-val">Frontend Developer (React)</span>
+                                </div>
+
+                                <p class="showcase-desc">
+                                    A responsive e-commerce web application built with React that allows users to browse
+                                    products, filter categories, manage a shopping cart, and enjoy a seamless shopping
+                                    experience through efficient state management.
+                                </p>
+
+                                <div class="showcase-highlights">
+                                    <span class="highlight-chip"><i class="fas fa-shopping-cart"></i> Shopping
+                                        Cart</span>
+                                    <span class="highlight-chip"><i class="fas fa-filter"></i> Category Filtering</span>
+                                    <span class="highlight-chip"><i class="fas fa-code-branch"></i> Context API
+                                        State</span>
+                                    <span class="highlight-chip"><i class="fas fa-store"></i> FakeStore API</span>
+                                    <span class="highlight-chip"><i class="fas fa-database"></i> LocalStorage</span>
+                                    <span class="highlight-chip"><i class="fas fa-mobile-alt"></i> Responsive UI</span>
+                                </div>
+
+                                <div class="showcase-stack">
+                                    <span class="stack-tag">React.js</span>
+                                    <span class="stack-tag">Context API</span>
+                                    <span class="stack-tag">React Router</span>
+                                    <span class="stack-tag">Bootstrap</span>
+                                    <span class="stack-tag">FakeStore API</span>
+                                    <span class="stack-tag">LocalStorage</span>
+                                    <span class="stack-tag">ES6+</span>
+                                </div>
+                            </div>
+
+                            <div class="showcase-actions">
+                                <button class="btn-case-study open-case-study-btn" data-project="quick-pick">
+                                    <i class="fas fa-book-open"></i> View Case Study
+                                </button>
+                                <button class="btn-demo-link watch-demo-link" data-video="assets/quick-pick.mp4"
+                                    data-title="Quick Pick Demo">
+                                    <i class="fas fa-play-circle"></i> Watch Demo
+                                </button>
+                                <a href="https://github.com/roaa676" target="_blank" class="btn-demo-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 5: Wanderlust -->
+                    <article class="showcase-card reveal reveal-delay-3" data-category="ui-showcase">
+                        <!-- Browser Window Frame Mockup -->
+                        <div class="showcase-media-container">
+                            <div class="browser-window-bar">
+                                <div class="browser-window-dots">
+                                    <span class="browser-dot b-red"></span>
+                                    <span class="browser-dot b-yellow"></span>
+                                    <span class="browser-dot b-green"></span>
+                                </div>
+                                <div class="browser-address-bar">
+                                    <i class="fas fa-lock"></i> https://wanderlust-travel.com
+                                </div>
+                            </div>
+                            <div class="showcase-screenshot-frame">
+                                <img src="assets/Tourism-Cover.png" alt="Wanderlust Travel Landing Page Mockup">
+                                <div class="showcase-media-overlay">
+                                    <button class="play-demo-btn watch-demo-link" data-video="assets/Tourism-Demo.mp4"
+                                        data-title="Wanderlust Travel Demo"
+                                        aria-label="Play Wanderlust Video Walkthrough">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-content">
+                            <div>
+                                <!-- Domain Category Label First -->
+                                <div class="showcase-domain-label">
+                                    <i class="fas fa-plane-departure"></i> Premium Travel Landing Page
+                                </div>
+                                <h3 class="showcase-title">Wanderlust</h3>
+
+                                <!-- Candidate Role Inside Content Details -->
+                                <div class="showcase-role-meta">
+                                    <span class="role-title-label">My Role:</span>
+                                    <span class="role-title-val">Frontend Developer &amp; UI Implementation</span>
+                                </div>
+
+                                <p class="showcase-desc">
+                                    A modern travel landing page focused on delivering an immersive user experience
+                                    through elegant layouts, cinematic visuals, reusable UI components, responsive
+                                    design, and refined micro-interactions.
+                                </p>
+
+                                <div class="showcase-highlights">
+                                    <span class="highlight-chip"><i class="fas fa-images"></i> Hero Slider</span>
+                                    <span class="highlight-chip"><i class="fas fa-map-marked-alt"></i> Destination
+                                        Showcase</span>
+                                    <span class="highlight-chip"><i class="fas fa-compass"></i> Experiences
+                                        Section</span>
+                                    <span class="highlight-chip"><i class="fas fa-chart-line"></i> Animated
+                                        Statistics</span>
+                                    <span class="highlight-chip"><i class="fas fa-paper-plane"></i> Newsletter
+                                        Subscription</span>
+                                    <span class="highlight-chip"><i class="fas fa-magic"></i> Smooth
+                                        Micro-interactions</span>
+                                </div>
+
+                                <div class="showcase-stack">
+                                    <span class="stack-tag">HTML5</span>
+                                    <span class="stack-tag">CSS3</span>
+                                    <span class="stack-tag">JavaScript (ES6+)</span>
+                                    <span class="stack-tag">CSS Grid</span>
+                                    <span class="stack-tag">Flexbox</span>
+                                    <span class="stack-tag">Responsive Design</span>
+                                </div>
+                            </div>
+
+                            <div class="showcase-actions">
+                                <button class="btn-case-study open-case-study-btn" data-project="wanderlust-travel">
+                                    <i class="fas fa-book-open"></i> View Case Study
+                                </button>
+                                <button class="btn-demo-link watch-demo-link" data-video="assets/Tourism-Demo.mp4"
+                                    data-title="Wanderlust Demo">
+                                    <i class="fas fa-play-circle"></i> Watch Demo
+                                </button>
+                                <a href="https://github.com/roaa676" target="_blank" class="btn-demo-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="reveal">
+                        <span class="section-tag">GET IN TOUCH</span>
+                        <h2 class="section-title">Let's Connect & Work Together</h2>
+                        <p class="section-subtitle" style="margin-bottom:2rem;">
+                            I am currently open to full-time roles, freelance projects, and front-end collaborations.
+                            Feel free to reach out directly via email or the form.
+                        </p>
+
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <div class="contact-info-label">Direct Email</div>
+                                    <div class="contact-info-val" style="display:flex;align-items:center;gap:10px;">
+                                        roaaezzat676@gmail.com
+                                        <button id="copyEmailBtn" class="btn btn-secondary"
+                                            style="padding:0.2rem 0.6rem;font-size:0.75rem;" title="Copy Email">
+                                            <i class="fas fa-copy"></i> Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fas fa-briefcase"></i></div>
+                                <div>
+                                    <div class="contact-info-label">Current Availability</div>
+                                    <div class="contact-info-val">Open for Full-time & Remote Roles</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-row">
+                            <a href="https://github.com/roaa676" target="_blank" class="social-link-btn"
+                                aria-label="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/roaaezzat/" target="_blank" class="social-link-btn"
+                                aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card reveal reveal-delay-2">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="formName" class="form-label">Your Name</label>
+                                <input type="text" id="formName" class="form-control" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formEmail" class="form-label">Your Email</label>
+                                <input type="email" id="formEmail" class="form-control" placeholder="john@example.com"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formMessage" class="form-label">Message</label>
+                                <textarea id="formMessage" class="form-control"
+                                    placeholder="Hi Roaa, I'd like to discuss an opportunity..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary contact-submit-btn" id="contactSubmitBtn">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">&lt;<span>RA</span> /&gt;</a>
+                <p class="footer-copy">&copy; 2026 Roaa Ahmed. All rights reserved.</p>
+            </div>
+
+            <ul class="footer-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- DEDICATED CASE STUDY MODAL -->
+    <dialog id="caseStudyModal" class="case-study-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <i class="fas fa-book-open" style="color:var(--accent-emerald)"></i>
+                    <span class="modal-title" id="csTitle">Project Case Study</span>
+                    <span class="modal-category-badge" id="csCategory">Category</span>
+                </div>
+                <button class="modal-close-btn" id="csCloseBtn" aria-label="Close Case Study Modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="case-study-scroll-body">
+                <div class="case-study-hero-banner">
+                    <img id="csHeroImg" src="" alt="Case Study Cover Preview">
+                </div>
+
+                <div class="cs-meta-grid">
+                    <div class="cs-meta-item">
+                        <span class="cs-meta-label">My Role</span>
+                        <span class="cs-meta-val" id="csRole">Frontend Developer</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="cs-meta-label">Project Status</span>
+                        <span class="cs-meta-val" style="color:var(--accent-emerald)">Production Ready</span>
+                    </div>
+                    <div class="cs-meta-item">
+                        <span class="cs-meta-label">Implementation</span>
+                        <span class="cs-meta-val">Full Client SPA Architecture</span>
+                    </div>
+                </div>
+
+                <div class="cs-section-block">
+                    <h4 class="cs-section-heading"><i class="fas fa-info-circle"></i> Project Overview</h4>
+                    <p class="cs-paragraph" id="csOverview"></p>
+                </div>
+
+                <div class="cs-split-grid">
+                    <div class="cs-card-box">
+                        <h4 class="cs-section-heading" style="color:#ef4444;"><i
+                                class="fas fa-exclamation-triangle"></i> The Problem Solved</h4>
+                        <p class="cs-paragraph" id="csProblem"></p>
+                    </div>
+                    <div class="cs-card-box solution-box">
+                        <h4 class="cs-section-heading" style="color:var(--accent-emerald);"><i
+                                class="fas fa-check-circle"></i> My Solution</h4>
+                        <p class="cs-paragraph" id="csSolution"></p>
+                    </div>
+                </div>
+
+                <div class="cs-section-block">
+                    <h4 class="cs-section-heading"><i class="fas fa-star"></i> Key Features</h4>
+                    <div class="cs-features-grid" id="csFeaturesList"></div>
+                </div>
+
+                <div class="cs-section-block">
+                    <h4 class="cs-section-heading"><i class="fas fa-microchip"></i> Technical Highlights & Architecture
+                    </h4>
+                    <p class="cs-paragraph" id="csTechHighlights"></p>
+                </div>
+
+                <div class="cs-section-block">
+                    <h4 class="cs-section-heading"><i class="fas fa-user-check"></i> My Role & Responsibilities</h4>
+                    <p class="cs-paragraph" id="csResponsibilities"></p>
+                </div>
+
+                <div class="cs-section-block">
+                    <h4 class="cs-section-heading"><i class="fas fa-tools"></i> Key Challenges & Engineering Solutions
+                    </h4>
+                    <p class="cs-paragraph" id="csChallenges"></p>
+                </div>
+
+                <div class="cs-section-block">
+                    <h4 class="cs-section-heading"><i class="fas fa-layer-group"></i> Technologies & Tools</h4>
+                    <div class="showcase-stack" id="csTechStackList"></div>
+                </div>
+
+                <div class="cs-footer-actions">
+                    <button class="btn btn-secondary" id="csDemoBtn">
+                        <i class="fas fa-play-circle"></i> Watch Video Demo
+                    </button>
+                    <a href="https://github.com/roaa676" target="_blank" class="btn btn-primary" id="csGithubBtn">
+                        <i class="fab fa-github"></i> View GitHub Code
+                    </a>
+                </div>
+            </div>
+    </dialog>
+
+    <!-- VIDEO DEMO MODAL -->
+    <dialog id="demoModal" class="demo-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <i class="fas fa-play-circle" style="color:var(--accent-emerald)"></i>
+                    <span class="modal-title" id="modalTitleText">Project Video Walkthrough</span>
+                </div>
+                <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Video Modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-video-body">
+                <video id="modalVideoPlayer" class="modal-video-player" controls preload="metadata"></video>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toastNotification" class="toast-notification">
+        <i class="fas fa-info-circle" style="color:var(--accent-emerald)"></i>
+        <span id="toastMessage">Notification message</span>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- ES6 Application Entry Point -->
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
